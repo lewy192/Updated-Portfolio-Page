@@ -14,6 +14,10 @@
     --darkSlateGrey: #374b4a;
 }
 
+a {
+    color: var(--celeste);
+    text-decoration: none;
+}
 body {
     margin: 0;
     display: flex;
@@ -36,6 +40,9 @@ body {
     letter-spacing: 1.2;
     padding: 0;
 }
+.name-head {
+    font-size: 28px;
+}
 
 .nav-bar {
     width: 100%;
@@ -50,7 +57,19 @@ body {
     flex-direction: row;
 }
 
+.profile-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-img-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .content {
+    color: var(--darkSlateGrey);
+    background-color: rgb(238, 237, 237);
     /* flex-basis: 80%; */
     /* background image of melbourne */
 }
@@ -58,7 +77,8 @@ body {
 .icon {
     max-width: 25px;
     max-height: 25px;
-    filter: invert(100);
+    filter: invert(90%) sepia(19%) saturate(470%) hue-rotate(124deg)
+        brightness(108%) contrast(107%);
     margin: 5px;
 }
 
