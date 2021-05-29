@@ -67,7 +67,7 @@ body {
     width: 36px;
 }
 .burger-menu:hover div {
-    animation: changeBackgroundColor 4s linear infinite alternate;
+    animation: burgerChangeColorHover 4s linear infinite alternate;
 }
 
 .line1,
@@ -306,7 +306,7 @@ footer {
     }
 }
 
-@keyframes changeBackgroundColor {
+@keyframes burgerChangeColorHover {
     0% {
         background-color: var(--celeste);
     }
@@ -317,9 +317,9 @@ footer {
         background-color: var(--coolGrey);
     }
     75% {
-        background-color: var(--feldgrau);
+        background-color: #f188f5;
     }
     100% {
-        background-color: var(--textColor);
+        background-color: rgb(76, 153, 111);
     }
 }
