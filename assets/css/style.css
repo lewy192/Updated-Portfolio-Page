@@ -110,6 +110,7 @@ body.bgcolor {
 }
 
 .name-head {
+    font-weight: 300;
     font-size: 22px;
     margin: auto auto auto 15px;
 }
