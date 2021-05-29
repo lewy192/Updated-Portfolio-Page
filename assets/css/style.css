@@ -111,6 +111,7 @@ body.bgcolor {
 
 .name-head {
     font-size: 22px;
+    margin: auto auto auto 15px;
 }
 
 .nav-bar {
@@ -123,7 +124,11 @@ body.bgcolor {
     transition: 0.6s;
     top: 20%;
 }
-
+.brand {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    font-weight: 300;
+}
 .nav-list {
     display: flex;
     flex-direction: column;
@@ -182,12 +187,12 @@ body.bgcolor {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 8px 0;
+    margin: 8px 40px;
 }
 
 .profile-img-container {
-    margin-left: auto;
-    max-width: 100px;
+    margin-right: auto;
+    max-width: 150px;
     display: flex;
     flex-direction: column;
 }
@@ -205,8 +210,16 @@ body.bgcolor {
     font-weight: 300;
 }
 .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--celeste);
     /* max-width: 50px;
     max-height: 50px; */
+}
+.occupation,
+.location {
+    align-self: center;
 }
 .content {
     color: var(--celeste);
