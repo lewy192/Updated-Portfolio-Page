@@ -22,7 +22,12 @@ a {
     color: var(--celeste);
     text-decoration: none;
 }
+html {
+    overflow-x: hidden;
+}
 body {
+    overflow-x: hidden;
+    background-color: var(--coolGrey);
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -30,6 +35,7 @@ body {
 .side-navbar {
     /* flex-basis: 20%; */
     position: fixed;
+    padding-left: 1rem;
     top: 0;
     color: var(--celeste);
     width: 100%;
@@ -40,14 +46,13 @@ body {
     opacity: 0.7;
     /* align-items: center; */
 }
-.nav-list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 12px;
-    letter-spacing: 1.2;
-    padding: 0;
+
+.list-item {
+    font-size: 28px;
+    position: relative;
+    top: 0;
+    right: -0;
+    /* transform: translateX(px); */
 }
 
 .burger-menu {
@@ -61,6 +66,10 @@ body {
     height: 36px;
     width: 36px;
 }
+.burger-menu:hover div {
+    animation: changeBackgroundColor 4s linear infinite alternate;
+}
+
 .line1,
 .line2,
 .line3 {
@@ -84,8 +93,8 @@ body {
 }
 
 .transformed .line1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+    transform: rotate(-45deg) translate(-10px, 10px);
 }
 
 .transformed .line2 {
@@ -93,8 +102,8 @@ body {
 }
 
 .transformed .line3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+    -webkit-transform: rotate(45deg) translate(-7px, -7px);
+    transform: rotate(45deg) translate(-7px, -7px);
 }
 
 .name-head {
@@ -102,11 +111,63 @@ body {
 }
 
 .nav-bar {
+    align-self: center;
+    justify-self: center;
     width: 100%;
     padding: 0 5px;
+    /* display: hidden; */
+    position: fixed;
+    transition: 0.6s;
+    top: 20%;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateX(100%);
+    font-size: 12px;
+    letter-spacing: 1.2;
+    padding: 0;
+    transition: 0.6s;
+}
+.nav-list.transform {
+    transform: translate(0);
+}
+
+.list-item1 {
+    transition: 0.8s;
+}
+.list-item2 {
+    transition: 1s;
+}
+
+.list-item3 {
+    transition: 1.2s;
+}
+
+.list-item4 {
+    transition: 1.4s;
+}
+.list-item1.transform {
+    transform: translate(0);
+}
+.list-item2.transform,
+.list-item3.transform,
+.list-item4.transform {
+    transform: translate(0);
+}
+
+.nav-bar.transform {
+    transform: translate(0);
 }
 .list-item {
     list-style: none;
+    font-size: 50px;
+    font-weight: 700;
+    padding: 2rem;
+    opacity: 0;
 }
 
 .social-media {
@@ -145,13 +206,43 @@ body {
     max-height: 50px; */
 }
 .content {
-    padding: 1rem;
     color: var(--celeste);
-    /* background-color: rgb(225, 225, 226); */
+    /* background-color: var(--darkSlateGrey); */
+    padding-top: 55px;
+    transition: 0.4s;
+}
+.section {
+    padding: 1rem;
+    /* margin-top: 3px; */
     background-color: var(--darkSlateGrey);
-    /* flex-basis: 80%; */
-    /* background image of melbourne */
-    padding-top: 60px;
+}
+.section1 {
+    transition: 0.6s;
+}
+.section2 {
+    transition: 1s;
+}
+.section3 {
+    transition: 1.4s;
+}
+
+.section1.transform {
+    transform: translate(-120%, 0%);
+}
+
+.section2.transform {
+    transform: translate(-120%, 0%);
+}
+.section3.transform {
+    transform: translate(-120%, 0%);
+}
+
+.content.transform {
+    background-color: #ffffff00;
+    /* transform: translate(-100%, 0%); */
+}
+.social-medias.transform {
+    transform: translate(100%, 0%);
 }
 
 .icon {
@@ -193,10 +284,42 @@ body {
 }
 
 footer {
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: var(--darkSlateGrey);
     padding: 0.375rem;
+    transition: 0.6s;
+}
+
+/* creates the basis for the animation which will be assigned to list items dynamically  */
+@keyframes listItemRender {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes changeBackgroundColor {
+    0% {
+        background-color: var(--celeste);
+    }
+    25% {
+        background-color: var(--middleBlue);
+    }
+    50% {
+        background-color: var(--coolGrey);
+    }
+    75% {
+        background-color: var(--feldgrau);
+    }
+    100% {
+        background-color: var(--textColor);
+    }
 }

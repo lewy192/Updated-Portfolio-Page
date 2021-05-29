@@ -15,20 +15,26 @@
     <body>
         <div class="side-navbar">
             <div class="brand">logo</div>
-            <!-- <nav class="nav-bar">
+            <nav class="nav-bar">
                 <ul class="nav-list nav-list1">
-                    <li class="list-item">DISPLAY CASE</li>
-                    <li class="list-item">
+                    <li class="list-item list-item1">
+                        <a href="#" class="display-case">DISPLAY CASE</a>
+                    </li>
+                    <li class="list-item list-item2">
                         <a
                             href="mailto:lewis.james.hill@outlook.com"
                             class="contact-me"
                             >CONTACT ME</a
                         >
                     </li>
-                    <li class="list-item">RESUME</li>
-                    <li class="about-me list-item">ABOUT ME</li>
-                </ul> 
-            </nav> -->
+                    <li class="list-item list-item3">
+                        <a href="#" class="resume">RESUME</a>
+                    </li>
+                    <li class="about-me list-item list-item4">
+                        <a href="#" class="about">ABOUT ME</a>
+                    </li>
+                </ul>
+            </nav>
             <div class="burger-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -36,35 +42,33 @@
             </div>
         </div>
         <div class="content">
-            <label for="profile-container" class="container-tag"
-                >&ltprofile&gt</label
-            >
-            <div class="profile-container">
-                <h3 class="name-head">
-                    Hey I'm Lewis, My passion is building responsive fullstack
-                    Web Apps.
-                </h3>
-                <div class="profile-img-container">
-                    <img
-                        src="./assets/Img/placeholder.png"
-                        alt="A portrait photo of lewis hill"
-                        class="profile-img"
-                    />
-                    <label for="profile-img" class="occupation"
-                        >- A Full Stack Developer.</label
-                    >
-                    <label for="profile-img" class="location"
-                        >- Melbourne, Australia</label
-                    >
+            <div class="section1 section">
+                <label for="profile-container" class="container-tag"
+                    >&ltprofile&gt</label
+                >
+                <div class="profile-container">
+                    <h3 class="name-head">
+                        Hey I'm Lewis, My passion is building responsive
+                        fullstack Web Apps.
+                    </h3>
+                    <div class="profile-img-container">
+                        <img
+                            src="./assets/Img/placeholder.png"
+                            alt="A portrait photo of lewis hill"
+                            class="profile-img"
+                        />
+                        <label for="profile-img" class="occupation"
+                            >- A Full Stack Developer.</label
+                        >
+                        <label for="profile-img" class="location"
+                            >- Melbourne, Australia</label
+                        >
+                    </div>
                 </div>
+                <label for="profile-container" class="container-tag"
+                    >&lt/profile&gt</label
+                >
             </div>
-            <label for="profile-container" class="container-tag"
-                >&lt/profile&gt</label
-            >
-            <p class="intro">
-                A freelance web-developer who is trained in Full Stack
-                Development. Have A look at my projects bellow
-            </p>
 
             <button
                 style="display: none"
@@ -78,24 +82,43 @@
             >
                 MY GITHUB
             </button>
-
-            <label for="projects-container" class="container-tag"
-                >&ltprojects&gt</label
-            >
-            <div class="projects-container">
-                <div class="card-container">
-                    <div class="card">
-                        <h3 class="project-title">Portfolio Page</h3>
-                        <p class="project-desc">
-                            this project is cool because..
-                        </p>
-                        <a class="card-link" href="#">link to proj</a>
+            <div class="section2 section">
+                <label for="projects-container" class="container-tag"
+                    >&ltprojects&gt</label
+                >
+                <p class="intro">
+                    A freelance web-developer who is trained in Full Stack
+                    Development. Have A look at my projects bellow
+                </p>
+                <div class="projects-container">
+                    <div class="card-container">
+                        <div class="card">
+                            <h3 class="project-title">Portfolio Page</h3>
+                            <p class="project-desc">
+                                this project is cool because..
+                            </p>
+                            <a class="card-link" href="#">link to proj</a>
+                        </div>
                     </div>
                 </div>
+                <label for="projects-container" class="container-tag"
+                    >&lt/projects&gt</label
+                >
             </div>
-            <label for="projects-container" class="container-tag"
-                >&lt/projects&gt</label
-            >
+            <div class="section3 section">
+                <label for="about-container" class="container-tag"
+                    >&ltabout&gt</label
+                >
+                <div class="about-container">
+                    <p class="about-desc">
+                        this is a desctription about my journney, passion for
+                        building things and training background
+                    </p>
+                </div>
+                <label for="about-container" class="container-tag"
+                    >&lt/about&gt</label
+                >
+            </div>
         </div>
         <footer class="social-medias">
             <img
