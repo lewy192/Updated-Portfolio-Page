@@ -5,13 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Stint+Ultra+Condensed&display=swap"
+            rel="stylesheet"
+        />
         <script src="./assets/js/script.js" defer></script>
-        <title>Lewis Hill</title>
+        <title>Full-Stack Web Developer| Lewis Hill</title>
     </head>
     <body>
         <div class="side-navbar">
-            <div class="brand"></div>
-            <nav class="nav-bar">
+            <div class="brand">logo</div>
+            <!-- <nav class="nav-bar">
                 <ul class="nav-list nav-list1">
                     <li class="list-item">DISPLAY CASE</li>
                     <li class="list-item">
@@ -23,35 +27,75 @@
                     </li>
                     <li class="list-item">RESUME</li>
                     <li class="about-me list-item">ABOUT ME</li>
-                </ul>
-            </nav>
+                </ul> 
+            </nav> -->
+            <div class="burger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>
         <div class="content">
+            <label for="profile-container" class="container-tag"
+                >&ltprofile&gt</label
+            >
             <div class="profile-container">
-                <h1 class="name-head">G'day I'm Lewis Hill,</h1>
+                <h3 class="name-head">
+                    Hey I'm Lewis, My passion is building responsive fullstack
+                    Web Apps.
+                </h3>
                 <div class="profile-img-container">
                     <img
                         src="./assets/Img/placeholder.png"
-                        alt=""
+                        alt="A portrait photo of lewis hill"
                         class="profile-img"
                     />
-                    profile picture, head
                     <label for="profile-img" class="occupation"
-                        >A Full Stack Developer</label
+                        >- A Full Stack Developer.</label
+                    >
+                    <label for="profile-img" class="location"
+                        >- Melbourne, Australia</label
                     >
                 </div>
             </div>
+            <label for="profile-container" class="container-tag"
+                >&lt/profile&gt</label
+            >
             <p class="intro">
-                a freelance web-developer who is trained in Full Stack
-                Development
+                A freelance web-developer who is trained in Full Stack
+                Development. Have A look at my projects bellow
             </p>
 
-            <button class="resume-but button home-page-button">
+            <button
+                style="display: none"
+                class="resume-but button home-page-button"
+            >
                 MY RESUME
             </button>
-            <button class="my-github-but button home-page-button">
+            <button
+                style="display: none"
+                class="my-github-but button home-page-button"
+            >
                 MY GITHUB
             </button>
+
+            <label for="projects-container" class="container-tag"
+                >&ltprojects&gt</label
+            >
+            <div class="projects-container">
+                <div class="card-container">
+                    <div class="card">
+                        <h3 class="project-title">Portfolio Page</h3>
+                        <p class="project-desc">
+                            this project is cool because..
+                        </p>
+                        <a class="card-link" href="#">link to proj</a>
+                    </div>
+                </div>
+            </div>
+            <label for="projects-container" class="container-tag"
+                >&lt/projects&gt</label
+            >
         </div>
         <footer class="social-medias">
             <img
