@@ -10,6 +10,12 @@ const contentSections = document.querySelectorAll(".section");
 
 burgerButton.addEventListener("click", (e) => {
     e.currentTarget.classList.toggle("transformed");
+    console.log(e.currentTarget);
+    transformations();
+});
+
+navList.addEventListener("click", (e) => {
+    burgerButton.classList.toggle("transformed");
     transformations();
 });
 
@@ -30,9 +36,6 @@ function transformations() {
         section.classList.toggle("transform");
     });
     document.querySelector("body").classList.toggle("bgcolor");
-    // contentSection1.classList.toggle("transform"); //for each
-    // contentSection2.classList.toggle("transform");
-    // contentSection3.classList.toggle("transform");
     mainContent.classList.toggle("transform");
     footerMain.classList.toggle("transform");
 }
