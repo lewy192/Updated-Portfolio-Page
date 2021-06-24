@@ -22,6 +22,9 @@ a {
     color: var(--celeste);
     text-decoration: none;
 }
+.repo-link {
+    color: var(--middleBlue);
+}
 html {
     overflow-x: hidden;
 }
