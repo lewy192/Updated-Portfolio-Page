@@ -119,12 +119,6 @@ body.bgcolor {
     transform: rotate(45deg) translate(-7px, -7px);
 }
 
-.name-head {
-    font-weight: 300;
-    font-size: 16px;
-    margin: auto auto auto 15px;
-}
-
 .nav-bar {
     transform: translate(100%);
     align-self: center;
@@ -248,7 +242,7 @@ body.bgcolor {
 }
 
 .profile-img-container {
-    margin-right: auto;
+    /* margin-right: auto; */
     max-width: 150px;
     display: flex;
     flex-direction: column;
@@ -256,10 +250,23 @@ body.bgcolor {
 .location {
     margin-top: 4px;
 }
+.properties {
+    font-size: 14px;
+    line-break: normal;
+}
 .name-head {
     margin-top: auto;
     margin-bottom: auto;
     text-align: left;
+    white-space: pre-line;
+    font-weight: 300;
+    font-size: 16px;
+    margin: auto auto auto 15px;
+}
+.about-desc {
+    text-align: center;
+    white-space: pre-line;
+    font-weight: 400;
 }
 
 .container-tag {
@@ -408,13 +415,28 @@ footer {
     background-color: var(--middleBlue);
     border-radius: 8px;
 }
+@media screen and (max-width: 425px) {
+    .profile-container {
+        flex-direction: column;
+    }
+}
 
 @media screen and (min-width: 768px) {
     .section {
-        padding: 4rem;
+        padding: 2.5rem;
     }
     .name-head {
         font-size: 22px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .profile-img-container {
+        max-width: 250px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .profile-img-container {
+        max-width: 250px;
     }
 } /* creates the basis for the animation which will be assigned to list items dynamically */
 @keyframes listItemRender {
