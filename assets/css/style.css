@@ -55,6 +55,10 @@ body.bgcolor {
     /* align-items: center; */
 }
 
+.resume {
+    color: var(--coolGrey);
+}
+
 .list-item {
     font-size: 28px;
     position: relative;
